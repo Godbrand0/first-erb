@@ -306,13 +306,13 @@ border: 2px solid #fff;
     }
     .icon{
         display: block;
-        width: 30px;
+        width: 50px;
         margin-top: 50px;
         transition: 0.5s;
         cursor: pointer;
     }
     .icon:hover{
-        color: black;
+        opacity: 0.6;
         
     }
     .link{
@@ -326,7 +326,7 @@ border: 2px solid #fff;
         height: 80vh;
         width: 50px;
         position: fixed;
-        background: #191919;
+       
     }
     .navbar{
         display: inline;
