@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    max-width: 1400px;
+    display: block;
+    margin: auto;
+    font-family: sans-serif;
+    background: #191919;
+}
+.white-theme{
+    color: gray;
+    background: white;
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+    z-index: 1;
+    
+}
+.bttn{
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+.link-group{
+    list-style: none;
+    display: flex;
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+}
+.link{
+    color: #fff;
+    opacity: 0.5;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    margin: 0 20px;
+    line-height: 80px;
+    transition: 0.5s;
+    font-size: 20px;
+    outline: none;
+}
+.link:hover, .link.active{
+    opacity: 1;
+    color: white;
+    transform: translateX(-10px);
+}
+.home-section{
+    width: 100%;
+    padding: 0 90px;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    transition: 1s;
+}
+.hero-heading{
+    color: #fff;
+    font-size: 70px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.home-img{
+    position: relative;
+    margin-top: 70px;
+    right: 0;
+    height: 70vh;
+    width: 70vh;
+    object-fit: cover;
+    opacity: 0.2;
+    border-radius: 50%;
+}
+.home-section.active,
+.project-section.active,
+.about-section.active,
+.contact-section.active{
+    color: white;
+}
+.project-section{
+    width: 100%;
+    padding: 150px 100px 100px;
+    position: relative;
+    border: 3px solid white;
+    transition: 1s;
+}
+.project-heading{
+    font-size: 100px;
+    background: #252525;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #1a1a1a;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 8px transparent;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    
+}
+.project-card{
+    height: 400px;
+    width: 500px;
+    position: relative;
+    padding: 40px;
+}
+.project-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.project-content{
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    transition: 0.5s;
+    opacity:0;
+}
+.project-title{
+    font-size: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 300;
+}
+.project-info{
+    margin: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    
+}
+.project-btn{
+    height: 40px;
+    text-transform: capitalize;
+    background-color: #000;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    font-size: 18px;
+}
+.btn{
+    text-decoration: none;
+    color: #fff;
+}
+.project-btn:hover{
+background: transparent;
+border: 2px solid #fff;
+}
+.project-card:hover .project-img{
+    filter: blur(20px);
+}
+.project-card:hover .project-content{
+    opacity: 1;
+}
+.about-section{
+    width: 100%;
+    padding: 150px 100px 0;
+    position: relative;
+    border: 4px solid gray;
+    margin-top: 40px;
+    transition: 1s;
+}
+.about{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-gap: 40px;
+}
+.about-img-container{
+    position: relative;
+}
+.about-info{
+    color: #fff;
+    opacity: 0.6;
+    font-size: 20px;
+    line-height: 40px;
+}
+.about-img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.download-cv-btn{
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: -40px;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+    background: transparent;
+}
+.download-cv-btn:hover{
+    background: #000;
+}
+.contact-section{
+    position: relative;
+    transition: 1s;
+    padding: 100px 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+}
+::placeholder{
+    color: #fff;
+}
+#msg{
+    height: 280px;
+    resize: none;
+    font-family: sans-serif;
+}
+.form-submit-btn{
+    background: #ff4f4f;
+    text-transform: capitalize;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+}
+.form-submit-btn:hover{
+    opacity: 0.6;
+}
+
+.icon {
+    display:none;
+    width: 20px;
+    color: #fff;
+}
+.icon:hover{
+    transform: translateX(10px);
+}
+
+.icons{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.icon2{
+    cursor: pointer;
+}
+.icon2:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 5px 0;
+}
+
+@media screen and (min-width:480px ) and (max-width:1100px) {
+    .project-container{
+        display: block;
+        
+    }
+    .project-card{
+        height: 600px;
+        
+    }
+    .icons{
+        width: 100px;
+        display: block;
+    }
+    .icon{
+        display: block;
+        width: 30px;
+        margin-top: 50px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .icon:hover{
+        color: black;
+        
+    }
+    .link{
+        display:none ;
+    }
+    .hero-heading{
+        font-size: 50px;
+    }
+    .link-group{
+        display: block;
+        height: 80vh;
+        width: 50px;
+        position: fixed;
+        background: #191919;
+    }
+    .navbar{
+        display: inline;
+        opacity: 1;
+    }
+    .link{
+        padding: 10px 5px;
+    }
+    .download-cv-btn{
+        font-size: 10px;
+        left: 10%;
+    }
+    .home-section{
+        display: block;
+    }
+  
+}
