@@ -71,7 +71,7 @@ a{
 }
 .hero-heading{
     color: #fff;
-    font-size: 70px;
+    font-size: 50px;
     text-transform: capitalize;
     font-weight: 300;
 }
@@ -116,10 +116,11 @@ a{
     
 }
 .project-card{
-    height: 400px;
+    height: 500px;
     width: 100%;
     position: relative;
     padding: 40px;
+    gap: 10px;
 }
 .project-img{
     width: 100%;
@@ -132,7 +133,6 @@ a{
 }
 .project-content{
     position: relative;
-    padding: 20px;
     color: #fff;
     transition: 0.5s;
     opacity:0;
@@ -142,13 +142,14 @@ a{
     text-transform: capitalize;
     text-align: center;
     font-weight: 300;
+    color: black;
 }
 .project-info{
     margin: 20px;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-    
+    color: black;
 }
 .project-btn{
     height: 40px;
@@ -227,9 +228,7 @@ border: 2px solid #fff;
     position: relative;
     transition: 1s;
     padding: 100px 150px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
+   
 }
 .contact-form input, .contact-form textarea{
     width: 100%;
@@ -249,24 +248,6 @@ border: 2px solid #fff;
     resize: none;
     font-family: sans-serif;
 }
-.form-submit-btn{
-    background: #ff4f4f;
-    text-transform: capitalize;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-}
-.form-submit-btn:hover{
-    opacity: 0.6;
-}
 
 .icon {
     display:none;
@@ -278,20 +259,33 @@ border: 2px solid #fff;
 }
 
 .icons{
-    width: 90%;
+    
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 .icon2{
     cursor: pointer;
+    margin-top: 20px;
 }
 .icon2:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 5px 5px 0;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 5px 0 black;
+    border-radius: 7px;
+}
+footer{
+    text-align: center;
+    margin: 30px;
+}
+.text{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0.6;
 }
 
-@media screen and (min-width:120px ) and (max-width:1100px) {
+@media screen and (min-width:320px ) and (max-width:1100px) {
     .project-container{
         display: block;
         
