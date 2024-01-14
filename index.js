@@ -14,13 +14,13 @@
 
 function changeMode()
 {
-    let body = document.body;
-    
-    body.classList.toggle("white-theme");
-    let button = document.getElementById('buttn');
-    if (button.innerHTML == 'Darkmode') {
-        button.innerHTML = 'whitemode';
+   let body = document.querySelector ('body');
+   let link = document.querySelector ('.link');
+    if (link.style.color== '#fff') {
+        body.style.background = '#fff'
+        link.style.color = '#191919'
     } else {
-        button.innerHTML ='Darkmode';
+        body.style.background = '#191919'
+        link.style.color = '#fff';
     }
 }

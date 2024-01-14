@@ -10,6 +10,7 @@ body{
     margin: auto;
     font-family: sans-serif;
     background: #191919;
+    color: #fff;
 }
 .white-theme{
     color: gray;
@@ -25,14 +26,14 @@ body{
     align-items: center;
     background: #1a1a1a;
     z-index: 1;
-    
+    color: #fff;
 }
 .bttn{
     width: 50px;
     height: 20px;
     font-size: 10px;
     background: transparent;
-    color: white;
+    color: ;
     border: none;
     cursor: pointer;
     transition: 1s;
@@ -46,7 +47,7 @@ a{
     text-decoration: none;
 }
 .link{
-    color: #fff;
+    color:#fff ;
     opacity: 0.5;
     padding: 10px 30px;
     text-transform: capitalize;
@@ -64,14 +65,14 @@ a{
 
 .home-section{
     width: 100%;
-    padding: 0 90px;
+    padding: 90px;
     display: flex;
     align-items: center;
-    margin-top: 70px;
+    justify-content: space-around;
     transition: all 1s;
 }
 .hero-heading{
-    color: #fff;
+    color: ;
     font-size: 50px;
     text-transform: capitalize;
 }
@@ -93,7 +94,7 @@ a{
 }
 .project-section{
     width: 100%;
-    padding: 10px 10px 10px;
+    padding: 80px;
     border: 3px solid white;
     transition: all 0.5s;
 }
@@ -110,20 +111,19 @@ a{
 }
 .project-container{
     display: grid;
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(3, 350px);
     grid-column-gap: 70px;
     grid-row-gap: 60px;
     justify-content: center;
     align-items: center;
-    
+    margin: 50px;
 }
 .project-card{
     height: 300px;
     width: 100%;
     position: relative;
-    padding: 40px;
-    margin-top: 50px;
-    overflow-y: scroll;
+    margin-top: 10px;
+    overflow: auto;
 }
 .project-img{
     width: 100%;
@@ -136,7 +136,7 @@ a{
 }
 .project-content{
     position: relative;
-    color: #fff;
+    color: ;
     transition: 0.5s;
     opacity:0;
 }
@@ -166,6 +166,7 @@ a{
     justify-content: center;
     transition: 0.5s;
     font-size: 18px;
+    margin: 5px 40px;
 }
 .btn{
     text-decoration: none;
@@ -183,7 +184,7 @@ border: 2px solid #fff;
 }
 .about-section{
     width: 100%;
-    padding: 150px 100px 0;
+    padding: 100px;
     position: relative;
     border: 4px solid gray;
     margin-top: 40px;
@@ -199,7 +200,7 @@ border: 2px solid #fff;
     position: relative;
 }
 .about-info{
-    color: #fff;
+    color: ;
     opacity: 0.6;
     font-size: 20px;
     line-height: 40px;
@@ -234,24 +235,7 @@ border: 2px solid #fff;
     padding: 100px 150px;
    
 }
-.contact-form input, .contact-form textarea{
-    width: 100%;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid #fff;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    color: #fff;
-    padding: 5px 10px;
-}
-::placeholder{
-    color: #fff;
-}
-#msg{
-    height: 280px;
-    resize: none;
-    font-family: sans-serif;
-}
+
 
 .icon {
     display:none;
@@ -266,73 +250,73 @@ border: 2px solid #fff;
     
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+   
+    gap: 10px;
 }
 .icon2{
     cursor: pointer;
-    margin-top: 20px;
+    
+    
 }
-.icon2:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 5px 5px 0 black;
-    border-radius: 7px;
+.icons-8{
+    width: 40px;
+}
+.version{
+    color: ;
+    font-size: 10px;
+    font-weight: lighter;
+    opacity: 0.6;
+    text-align: right;
 }
 footer{
-    text-align: center;
-    margin: 30px;
+    
+    margin: 10px;
 }
 .text{
-    color: #fff;
-    font-size: 30px;
+    color: ;
+    font-size: 20px;
     font-weight: bold;
     opacity: 0.6;
 }
 
-@media screen and (min-width:320px ) and (max-width:1100px) {
+@media screen and (max-width:1100px) {
     .project-container{
-        display: block;
-        
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        grid-gap: 50px;
+      
     }
     .project-card{
+        width: 100%;
+        
+    }
+    .project-info{
+        margin: 10px;
+        
+    }
+    .about-section{
+        padding: 30px;
+    }
+    .home-img{
         width: 500px;
-        left: 70px;
+        height: 600px;
     }
     .icons{
-       display: flex;
-       justify-content: center;
-       align-items: center;
+       
     }
-    .icon{
-        display: block;
-        width: 50px;
-        margin-top: 50px;
-        transition: 0.5s;
-        cursor: pointer;
-    }
+   
     .icon:hover{
         opacity: 0.6;
         
     }
-    .link{
-        display:none ;
+    .bttn{
+        
     }
     .hero-heading{
         font-size: 50px;
     }
-    .link-group{
-        display: block;
-        width: 50px;
-        position: fixed;
-       
-    }
-    .navbar{
-        display: inline;
-        opacity: 1;
-    }
-    .link{
-        padding: 10px 5px;
-    }
+  
+    
     .download-cv-btn{
         font-size: 10px;
         left: 10%;
@@ -341,4 +325,59 @@ footer{
         display: block;
     }
   
+}
+
+@media screen and (max-width: 700px) {
+    .icon{
+        display: block;
+        width: 50px;
+        margin-top: 50px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .link-group{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+       
+       
+    }
+    .navbar{
+        width: 50px;
+        display: block;
+        justify-content: space-evenly;
+        align-items: center;
+        opacity: 1;
+    }
+    .bttn{
+        margin-top: 10px;
+    }
+    .link{
+        display: none;
+        padding: 10px 5px;
+    }
+    .project-container{
+        display: grid;
+        grid-template-columns: repeat(1, 350px);
+        grid-gap: 50px;
+      
+    }
+    .home-img{
+        width: 300px;
+        height: 400px;
+        margin-left: -50px;
+    }
+    .project-heading{
+        font-size: 60px;
+    }
+    .about{
+        display: block;
+
+    }
+    .about-img{
+        height: 400px;
+        
+    }
 }
