@@ -33,7 +33,7 @@ body{
     height: 20px;
     font-size: 10px;
     background: transparent;
-    color: ;
+    color: white;
     border: none;
     cursor: pointer;
     transition: 1s;
@@ -72,7 +72,6 @@ a{
     transition: all 1s;
 }
 .hero-heading{
-    color: ;
     font-size: 50px;
     text-transform: capitalize;
 }
@@ -136,7 +135,6 @@ a{
 }
 .project-content{
     position: relative;
-    color: ;
     transition: 0.5s;
     opacity:0;
 }
@@ -200,7 +198,6 @@ border: 2px solid #fff;
     position: relative;
 }
 .about-info{
-    color: ;
     opacity: 0.6;
     font-size: 20px;
     line-height: 40px;
@@ -250,7 +247,6 @@ border: 2px solid #fff;
     
     display: flex;
     align-items: center;
-   
     gap: 10px;
 }
 .icon2{
@@ -260,9 +256,9 @@ border: 2px solid #fff;
 }
 .icons-8{
     width: 40px;
+   
 }
 .version{
-    color: ;
     font-size: 10px;
     font-weight: lighter;
     opacity: 0.6;
@@ -273,7 +269,6 @@ footer{
     margin: 10px;
 }
 .text{
-    color: ;
     font-size: 20px;
     font-weight: bold;
     opacity: 0.6;
@@ -301,17 +296,13 @@ footer{
         width: 500px;
         height: 600px;
     }
-    .icons{
-       
-    }
+ 
    
     .icon:hover{
         opacity: 0.6;
         
     }
-    .bttn{
-        
-    }
+  
     .hero-heading{
         font-size: 50px;
     }
@@ -330,7 +321,7 @@ footer{
 @media screen and (max-width: 700px) {
     .icon{
         display: block;
-        width: 50px;
+        width: 40px;
         margin-top: 50px;
         transition: 0.5s;
         cursor: pointer;
@@ -370,7 +361,7 @@ footer{
         margin-left: -50px;
     }
     .project-heading{
-        font-size: 60px;
+        font-size: 50px;
     }
     .about{
         display: block;
@@ -379,5 +370,8 @@ footer{
     .about-img{
         height: 400px;
         
+    }
+    .about-info{
+        margin-left: 33px;
     }
 }
