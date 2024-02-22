@@ -227,12 +227,70 @@ border: 2px solid #fff;
     background: #000;
 }
 .contact-section{
-    position: relative;
+    position: absolute;
+   
+    opacity: ;
+    height: 100vh;
     transition: 1s;
     padding: 100px 150px;
-   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
 }
-
+input{
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    
+    border: 1px solid #fff;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    
+    color: #fff;
+    padding: 5px 10px;
+}
+textarea{
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    
+    color: #fff;
+    padding: 5px 10px;
+}
+textarea::placeholder{
+    color: #fff;
+    content: attr(placehoder);
+}
+input::placeholder{
+    color: #fff;
+    content: attr(placehoder);
+}
+#msg{
+    height: 280px;
+    resize: none;
+    font-family: sans-serif;
+}
+.form-submit{
+    background: #ff4f4f;
+    color: #fff;
+    padding: 15px 40px;
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.form-submit:hover{
+    transform:translateY(-7px) ;
+}
+.social{
+    border-left: 5px solid #fff;
+    
+}
 
 .icon {
     display:none;
@@ -246,13 +304,21 @@ border: 2px solid #fff;
 .icons{
     
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 20px;
 }
 .icon2{
     cursor: pointer;
+    display: flex;
+    align-items: center;
     
-    
+}
+.text{
+    margin-left: 10px;
+    color: whitesmoke;
+    opacity: 0.6;
+    text-decoration: underline;
 }
 .icons-8{
     width: 40px;
@@ -263,16 +329,15 @@ border: 2px solid #fff;
     font-weight: lighter;
     opacity: 0.6;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    
+    margin-right: 10px;
 }
 footer{
-    
-    margin: 10px;
+
 }
-.text{
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 0.6;
-}
+
 
 @media screen and (max-width:1100px) {
     .project-container{
@@ -374,4 +439,12 @@ footer{
     .about-info{
         margin-left: 33px;
     }
+    .contact-section{
+        display: block;
+    }
+    .social{
+       
+        margin-top: 30px;
+    }
+ 
 }

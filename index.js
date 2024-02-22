@@ -24,6 +24,12 @@ var text = document.querySelector('.text');
 var icons = document.querySelectorAll('.icon');
 var version = document.querySelector('.version');
 var icon_8 = document.querySelector('.icons-8');
+var social = document.querySelector('.social');
+var inputs = document.querySelectorAll('input');
+var textarea = document.querySelector('textarea');
+
+
+
 
 function darkmode() {
     btn.innerHTML = 'whitemode';
@@ -43,6 +49,15 @@ function darkmode() {
     });
     version.style.opacity = '0.6';
     icon_8.style.fill = 'white';
+    social.style.borderLeftColor = 'white';
+    textarea.style.borderColor = "white";
+    inputs.forEach(input => {
+        input.style.borderColor = "white";
+        input.style.opacity = "";
+        input.setAttribute('placehoder', 'color:black;');
+    });
+    
+    textarea.style.color = "white";
 }
 
 function lightmode() {
@@ -63,6 +78,14 @@ function lightmode() {
     });
     version.style.opacity = '1';
     icon_8.style.fill = '';
+    social.style.borderLeftColor = 'black';
+    textarea.style.borderColor = "black";
+    inputs.forEach(input => {
+        input.style.borderColor = "black";
+        input.style.opacity = "";
+        input.setAttribute('placehoder', 'color:black;');
+    });
+    textarea.style.color = "black"
 }
 
 function changeMode(){
@@ -72,3 +95,16 @@ function changeMode(){
         darkmode()
     };
 };
+
+
+var btn_done = document.querySelector('.btn_done');
+var modal_wrapper = document.querySelector('.modal_wrapper');
+var shadow = document.querySelector('.shadow');
+
+btn_done.addEventListener("click", function(){
+    modal_wrapper.classList.add("active");
+});
+
+shadow.addEventListener("click", function(){
+    modal_wrapper.classList.remove("active");
+});
