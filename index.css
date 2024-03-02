@@ -309,6 +309,9 @@ textarea{
     margin-left: 10px;
     color: whitesmoke;
     opacity: 0.6;
+    transition: all .2s;
+}
+.text:hover{
     text-decoration: underline;
 }
 .icons-8{
