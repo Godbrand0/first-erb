@@ -20,7 +20,7 @@ var img = document.querySelector('.home-img');
 var about = document.querySelector('.about-info');
 var nav = document.querySelector('.navbar');
 var links = document.querySelectorAll('.link');
-var text = document.querySelector('.text');
+var texts = document.querySelectorAll('.text');
 var icons = document.querySelectorAll('.icon');
 var version = document.querySelector('.version');
 var icon_8 = document.querySelector('.icons-8');
@@ -42,8 +42,13 @@ function darkmode() {
     links.forEach( link=> {
         link.style.opacity = '0.5';
       link.style.color = 'white';
-    }); 
-    text.style.opacity = '0.6';
+    });
+    texts.forEach(text => {
+        text.style.opacity = '0.6';
+        text.style.color = 'whitesmoke';
+        
+    });
+    
     icons.forEach(icon => {
         icon.style.color = 'white';
     });
@@ -57,7 +62,7 @@ function darkmode() {
     });
     
     textarea.style.color = "white";
-}
+};
 
 function lightmode() {
     body.style.background = 'white';
@@ -69,8 +74,13 @@ function lightmode() {
     links.forEach( link=> {
         link.style.opacity = '1';
       link.style.color = 'black';
-    }); 
-    text.style.opacity = '1';
+    });
+    texts.forEach(text => {
+        text.style.opacity = '1';
+        text.style.color = 'black';
+        
+    });
+    
     btn.innerHTML = 'darkmode';
     icons.forEach(icon => {
         icon.style.color = 'black';
@@ -84,7 +94,7 @@ function lightmode() {
         
     });
     textarea.style.color = "black"
-}
+};
 
 function changeMode(){
     if (btn.innerHTML === 'whitemode') {
