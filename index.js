@@ -48,13 +48,12 @@ function darkmode() {
         icon.style.color = 'white';
     });
     version.style.opacity = '0.6';
-    icon_8.style.fill = 'white';
+    icon_8.style.fill = '';
     social.style.borderLeftColor = 'white';
     textarea.style.borderColor = "white";
     inputs.forEach(input => {
         input.style.borderColor = "white";
-        input.style.opacity = "";
-        input.setAttribute('placehoder', 'color:black;');
+        
     });
     
     textarea.style.color = "white";
@@ -77,13 +76,12 @@ function lightmode() {
         icon.style.color = 'black';
     });
     version.style.opacity = '1';
-    icon_8.style.fill = '';
+    icon_8.style.color = 'black';
     social.style.borderLeftColor = 'black';
     textarea.style.borderColor = "black";
     inputs.forEach(input => {
         input.style.borderColor = "black";
-        input.style.opacity = "";
-        input.setAttribute('placehoder', 'color:black;');
+        
     });
     textarea.style.color = "black"
 }

@@ -228,8 +228,6 @@ border: 2px solid #fff;
 }
 .contact-section{
     position: absolute;
-   
-    opacity: ;
     height: 100vh;
     transition: 1s;
     padding: 100px 150px;
@@ -260,14 +258,7 @@ textarea{
     color: #fff;
     padding: 5px 10px;
 }
-textarea::placeholder{
-    color: #fff;
-    content: attr(placehoder);
-}
-input::placeholder{
-    color: #fff;
-    content: attr(placehoder);
-}
+
 #msg{
     height: 280px;
     resize: none;
@@ -329,14 +320,14 @@ input::placeholder{
     font-weight: lighter;
     opacity: 0.6;
     text-align: right;
-    display: flex;
-    flex-direction: column;
     
-    margin-right: 10px;
 }
 footer{
-
+    margin-top: 650px;
+    
+    
 }
+
 
 
 @media screen and (max-width:1100px) {
@@ -379,6 +370,9 @@ footer{
     }
     .home-section{
         display: block;
+    }
+    .contact-section{
+        padding: 10px 10px;
     }
   
 }
@@ -441,6 +435,7 @@ footer{
     }
     .contact-section{
         display: block;
+        padding: 30px 50px;
     }
     .social{
        
