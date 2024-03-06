@@ -27,6 +27,7 @@ var icon_8 = document.querySelector('.icons-8');
 var social = document.querySelector('.social');
 var inputs = document.querySelectorAll('input');
 var textarea = document.querySelector('textarea');
+var nvba = document.querySelector('#navba');
 
 
 
@@ -111,8 +112,10 @@ var shadow = document.querySelector('.shadow');
 
 btn_done.addEventListener("click", function(){
     modal_wrapper.classList.add("active");
+    nvba.style.display = 'none';
 });
 
 shadow.addEventListener("click", function(){
     modal_wrapper.classList.remove("active");
+    nvba.style.display = 'flex';
 });
