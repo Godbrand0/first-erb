@@ -39,6 +39,7 @@ nav{
     height: 60px;
     border-radius: 10px;
     font-family: "Mukta", sans-serif;
+    
 }
 ul{
     display: flex;
@@ -115,11 +116,11 @@ h2{
     transition: 0.2s ease;
     }
 
-.modal_wrapper .success_wrap p{
+.modal_wrapper .success_wrap .text-4{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -800px);
+   
     background: rgb(34, 33, 33);
     padding: 20px;
     width: 600px;
@@ -127,8 +128,8 @@ h2{
     align-items: center;
     border-radius: 5px;
     transition: 0.5s ease;
-    margin-top: 450px;
-    font-size: 20px;
+    margin-top: -190px;
+    font-size: 15px;
     line-height: 30px;
 }
 
@@ -139,6 +140,36 @@ h2{
 .modal_wrapper.active .shadow{
     opacity: 1;
 }
-.modal_wrapper.active .success_wrap p{
-    transform: translate(-50%,-50%);
+.modal_wrapper.active .success_wrap .text-4{
+    transform: translate(-50%,-13%);
 }
+
+
+/*responsive phone*/
+@media screen and (max-width:600px){
+    .container{
+        width: 325px;
+    }
+    nav{
+        width: 325px;
+    }
+    .modal_wrapper .success_wrap .text-4{
+        width: 325px;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .modal_wrapper .success_wrap{     
+        padding-top: 190px;
+    }
+}
+
+
+/*responsive tablet*/
+@media screen and (max-width:1024px){
+    .modal_wrapper .success_wrap .text-4{     
+        margin-top: -50%;
+    }
+}
+
