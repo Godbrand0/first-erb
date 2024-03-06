@@ -109,13 +109,14 @@ function changeMode(){
 var btn_done = document.querySelector('.btn_done');
 var modal_wrapper = document.querySelector('.modal_wrapper');
 var shadow = document.querySelector('.shadow');
+var close = document.querySelector('.material-symbols-sharp');
 
 btn_done.addEventListener("click", function(){
     modal_wrapper.classList.add("active");
     nvba.style.display = 'none';
 });
 
-shadow.addEventListener("click", function(){
+close.addEventListener("click", function(){
     modal_wrapper.classList.remove("active");
     nvba.style.display = 'flex';
 });

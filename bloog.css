@@ -144,6 +144,14 @@ h2{
     transform: translate(-50%,-13%);
 }
 
+.material-symbols-sharp{
+    float: right;
+    cursor: pointer;
+    padding: 5px 5px;
+    background: gray;
+    border-radius: 50%;
+}
+
 
 /*responsive phone*/
 @media screen and (max-width:600px){
@@ -161,7 +169,7 @@ h2{
 
 @media screen and (max-width:400px){
     .modal_wrapper .success_wrap{     
-        padding-top: 600px;
+        padding-top: 800px;
     }
 }
 
