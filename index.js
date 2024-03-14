@@ -28,6 +28,7 @@ var social = document.querySelector('.social');
 var inputs = document.querySelectorAll('input');
 var textarea = document.querySelector('textarea');
 var nvba = document.querySelector('#navba');
+var texts_1 = document.querySelectorAll('.text-8');
 
 
 
@@ -45,6 +46,12 @@ function darkmode() {
       link.style.color = 'white';
     });
     texts.forEach(text => {
+        text.style.opacity = '0.6';
+        text.style.color = 'whitesmoke';
+        
+    });
+
+    texts_1.forEach(text => {
         text.style.opacity = '0.6';
         text.style.color = 'whitesmoke';
         
@@ -81,6 +88,12 @@ function lightmode() {
         text.style.color = 'black';
         
     });
+
+    texts_1.forEach(text => {
+        text.style.opacity = '1';
+        text.style.color = 'black';
+        
+    });
     
     btn.innerHTML = 'darkmode';
     icons.forEach(icon => {
@@ -106,17 +119,3 @@ function changeMode(){
 };
 
 
-var btn_done = document.querySelector('.btn_done');
-var modal_wrapper = document.querySelector('.modal_wrapper');
-var shadow = document.querySelector('.shadow');
-var close = document.querySelector('.material-symbols-sharp');
-
-btn_done.addEventListener("click", function(){
-    modal_wrapper.classList.add("active");
-    nvba.style.display = 'none';
-});
-
-close.addEventListener("click", function(){
-    modal_wrapper.classList.remove("active");
-    nvba.style.display = 'flex';
-});

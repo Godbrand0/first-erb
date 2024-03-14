@@ -26,7 +26,7 @@ body::-webkit-scrollbar-track{
 
 .container{
     width: 600px;
-    
+   
 }
 nav{
     display: flex;
@@ -51,12 +51,24 @@ li{
     list-style: none;
     padding-left: 10px;
     text-decoration: none;
-    color: white;
+    
     cursor: pointer;
+}
+
+.bttn{
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+    margin-left: 5px;
 }
 a{
     text-decoration: none;
-    color: white;
+    color: #fff;
     opacity: 0.8;
 }
 h1{
@@ -167,10 +179,8 @@ h2{
     }
 }
 
-@media screen and (max-width:400px){
-    .modal_wrapper .success_wrap{     
-        padding-top: 800px;
-    }
+@media screen and (max-width:390px){
+ 
 }
 
 
