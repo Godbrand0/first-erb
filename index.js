@@ -27,7 +27,7 @@ var icon_8 = document.querySelector('.icons-8');
 var social = document.querySelector('.social');
 var inputs = document.querySelectorAll('input');
 var textarea = document.querySelector('textarea');
-var nvba = document.querySelector('#navba');
+
 var texts_1 = document.querySelectorAll('.text-8');
 
 

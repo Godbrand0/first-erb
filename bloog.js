@@ -5,6 +5,7 @@ var links = document.querySelectorAll('.link');
 var sections = document.querySelectorAll('section');
 var reads = document.querySelectorAll('.bttn_done');
 var btn = document.querySelector('.bttn');
+var nvba = document.querySelector('#navba');
 
 
 
@@ -12,6 +13,7 @@ var btn_done = document.querySelector('.btn_done');
 var modal_wrapper = document.querySelector('.modal_wrapper');
 var shadow = document.querySelector('.shadow');
 var close = document.querySelector('.material-symbols-sharp');
+var texts_4 = document.querySelectorAll('.text-4');
 
 btn_done.addEventListener("click", function(){
     modal_wrapper.classList.add("active");
@@ -34,10 +36,14 @@ function darkmode() {
         link.style.opacity = '0.5';
       link.style.color = 'white';
     });
- 
+    texts_4.forEach(text_4 => {
+        text_4.style.background = 'rgb(34, 33, 33)';
+        text_4.style.color = 'whitesmoke';
+        
+    });
     reads.forEach(read => {
         read.style.background = 'black';
-        text.style.color = 'whitesmoke';
+        read.style.color = 'whitesmoke';
         
     });
     
@@ -57,10 +63,14 @@ function lightmode() {
       link.style.color = 'black';
     });
  
-
+    texts_4.forEach(text_4 => {
+        text_4.style.background = 'whitesmoke';
+        text_4.style.color = 'rgb(34, 33, 33)';
+        
+    });
     reads.forEach(read => {
         read.style.background = 'whitesmoke';
-        text.style.color = 'black';
+        read.style.color = 'black';
         
     });
     
